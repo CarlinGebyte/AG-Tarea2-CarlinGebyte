@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+/** GLOBAL**/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins','Montserrat', sans-serif;    
+}
+
+body{
+    text-align: center;
+}
+
+section{
+    padding: 20px;
+}
+
+/** INPUT **/
+#first{
+    margin-right: 20px;
+}
+
+.form-control{
+    display: inline-block !important;
+    max-width: 200px;
+    margin: 10px;
+}
+
+/** CARD **/
+.card-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.card{
+    display: inline-block;
+    text-align: center;
+    width: 250px;
+    background-color: #090847;
+    color: #fff;
+    margin: 20px;
+    justify-content: space-between;
+}
+
+.card-header{
+    height: 70px;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+
+/** RESPONSIVE **/
+
+@media(max-width:768px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #first{
+        margin-right: 0px;
+    }
+}
+
+@media(max-width: 500px){
+    .card-container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
